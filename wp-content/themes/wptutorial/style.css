@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/*
+Theme Name: WPTutorial
+Theme URI: https://wordpresstutorial.shop/
+Author: WordPress Tutorial
+Author URI: https://wordpresstutorial.shop/author
+Description: For plugin development
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wptutorial
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready, block-patterns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/*Style.css*/
+* {font-family: 'Roboto', sans-serif;font-weight:400;}
+.a00 {
+	font-size:35px;
+}
+.b00 .c00{
+	color:red;
+}
+
+.b03 .c00{
+	color:green;
+}
+.a00 .b00 .c00 {
+	color:green;
+}
+
+
+.a00.a01 .b00 .c00 {
+	color:yellow;
+}
+.a00.a01>.b00>.c00 {/*직계자손*/
+	color:red;
+}
+.c01::before {
+	 content:"추가내용";
+}
+.c01:hover {
+	background-color:red;
+}
+.a00 .c01{/*Grand Parent*/
+	color:gray;
+}
+.b03 .c01{/*Parent*/
+	color:blue;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.my-navbar {
+	background-color:#333;
+	overflow:hidden;
+	line-height:1;
+}
+.my-navbar a{
+	color:#fff;
+	float:left;
+	padding:14px 20px;
+	text-decoration:none;
+}
+.my-navbar a.right{
+	float:right;
+	
+}
+.my-navbar a.active{
+	background-color:#666;
+	
+}
+.my-navbar a:hover{
+	background-color:#fff;
+	color:#333;
+}
+.my-row {
+	display:flex;
+}
+.sidebar {
+	width:30%;
+	background-color:#f1f1f1;
+	padding:20px;
+}
+.main {
+	width:100%;
+	background-color:#ffffff;
+	
+}
+.sideimg {
+	background-color: #aaa;
+    padding: 20px;
+	height:160px;
+}
+.sideimg-slim {
+	background-color: #aaa;
+    padding: 20px;
+	height:20px;
+	margin-bottom:15px;
+}
+.content-img {
+	background-color: #aaa;
+    padding: 20px;
+	height:160px;
+}
+.thumb-img {
+	background-color: #aaa;
+	height:160px;
+	width:100%;
+}
+.footer{
+	text-align:center;
+	background-color:#ddd;
+	padding:20px;
+}
+.f-input {
+	display:block;
+}
+.r-triangle {
+    font-size: 20px;
+    vertical-align: 1px;
+	color:blue;
+}
+.card {
+	font-family: 'Roboto', sans-serif;	
+}
+.card-text {
+	min-height:70px;
+}
+h5.card-title {
+	font-size: 16px;
+    font-weight: 700;
+    color: #999;
+}
+
+.wpt-wrapper {
+	max-width:100%;
+	padding:0;
+}
+.left-colu {
+	padding: 20px;
+	margin-right:10px;
+}
+.right-colu {
+	padding: 20px;
+	margin-left:10px;
+}
+.full-colu {
+	padding: 10px 20px;
+}
+.f-card {
+	background-color: #FFFFFF;
+	box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+	border-radius: 12px;
+}
+
+.wpt-formcard {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.wpt-btn{
+    border-style: solid;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    color: #ffffff;
+    border-color: #ee3a5e;
+    background-color: #ee3a5e;
+    border-radius: 7px;
+    padding-top: 17px;
+    padding-right: 30px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 17px;
+    font-size: 1rem;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.wpt-btn:hover{
+	color: #ffffff;
+    background-color: #f70077;
+    border-color: #f70077;
+}
+/* Menu Test */
+
+.my-navbar ul li {
+	list-style:none;
+	display:inline-block;
+}
+.my-navbar ul li a {
+	text-decoration:none;
+}
+.my-navbar ul {
+	padding-left:0;
+	margin-bottom:0;
+}
+
+.my-navbar ul li.current-menu-item {
+	background:#fff;
+}
+.my-navbar ul li.current-menu-item a{
+	color:#333;
+}
+
+.my-row .sidebar li {
+	list-style:none;
+}
+.my-row .sidebar li h2{
+	line-height: 18px;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+.sidebar ul {
+    padding-left:5px;
+}
+.sidebar>div>div>li {
+	margin-bottom:50px;
+}
+.sidebar ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+	text-decoration: none;
+	color: #595959;
+}
+.sidebar ul li a:hover {
+	text-decoration:Underline;
+}
+.sidebar .widget form.searchform {
+}
+.sidebar .widget form.searchform label{
+	display:none;
+}
+.sidebar .widget form.searchform input{
+	display:inline-block;
+	width:68%;
+}
+.sidebar .widget form.searchform input[type=submit]{
+	width: 28%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
