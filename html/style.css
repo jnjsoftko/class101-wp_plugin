@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+/*Style.css*/
+* {font-family: 'Nanum Gothic', sans-serif;}
+.a00 {
+	font-size:35px;
+}
+.b00 .c00{
+	color:red;
+}
+
+.b03 .c00{
+	color:green;
+}
+.a00 .b00 .c00 {
+	color:green;
+}
+
+
+.a00.a01 .b00 .c00 {
+	color:yellow;
+}
+.a00.a01>.b00>.c00 {/*직계자손*/
+	color:red;
+}
+.c01::before {
+	 content:"추가내용";
+}
+.c01:hover {
+	background-color:red;
+}
+.a00 .c01{/*Grand Parent*/
+	color:gray;
+}
+.b03 .c01{/*Parent*/
+	color:blue;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.my-navbar {
+	background-color:#333;
+	overflow:hidden;
+}
+.my-navbar a{
+	color:#fff;
+	float:left;
+	padding:14px 20px;
+	text-decoration:none;
+}
+.my-navbar a.right{
+	float:right;
+	
+}
+.my-navbar a.active{
+	background-color:#666;
+	
+}
+.my-navbar a:hover{
+	background-color:#777;
+}
+.my-row {
+	display:flex;
+}
+.sidebar {
+	width:30%;
+	background-color:#f1f1f1;
+	padding:20px;
+}
+.main {
+	width:100%;
+	background-color:#ffffff;
+	padding:20px;
+}
+.sideimg {
+	background-color: #aaa;
+    padding: 20px;
+	height:160px;
+}
+.sideimg-slim {
+	background-color: #aaa;
+    padding: 20px;
+	height:20px;
+	margin-bottom:15px;
+}
+.content-img {
+	background-color: #aaa;
+    padding: 20px;
+	height:160px;
+}
+.thumb-img {
+	background-color: #aaa;
+	height:160px;
+	width:100%;
+}
+.footer{
+	text-align:center;
+	background-color:#ddd;
+	padding:20px;
+}
+.f-input {
+	display:block;
+}
+.r-triangle {
+    font-size: 20px;
+    vertical-align: 1px;
+	color:blue;
+}
+.card {
+	font-family: 'Roboto', sans-serif;	
+}
+.card-text {
+	min-height:70px;
+}
+h5.card-title {
+	font-size: 16px;
+    font-weight: 700;
+    color: #999;
+}
+
+.wpt-wrapper {
+	max-width:100%;
+	padding:0;
+}
+.left-colu {
+	padding: 20px;
+	margin-right:10px;
+}
+.right-colu {
+	padding: 20px;
+	margin-left:10px;
+}
+.full-colu {
+	padding: 10px 20px;
+}
+.f-card {
+	background-color: #FFFFFF;
+	box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+	border-radius: 12px;
+}
+
+.wpt-formcard {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.wpt-btn{
+    border-style: solid;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    color: #ffffff;
+    border-color: #ee3a5e;
+    background-color: #ee3a5e;
+    border-radius: 7px;
+    padding-top: 17px;
+    padding-right: 30px;
+    padding-bottom: 17px;
+    padding-left: 30px;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 17px;
+    font-size: 1rem;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.wpt-btn:hover{
+	color: #ffffff;
+    background-color: #f70077;
+    border-color: #f70077;
+}
